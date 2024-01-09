@@ -1,0 +1,16 @@
+name: Visualizar Contador
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  contador:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v2
+
+      - name: Visualizar Contador
+        run: echo "O contador atual é $(( $(cat contador.json) ))"
