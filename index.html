@@ -11,6 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2K59YCJ703"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2K59YCJ703');
+</script>		
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
@@ -33,6 +42,8 @@
 						</nav>
 						
 						<button id="confirmButton">Confirmar Presença</button>
+						<button onclick="alert(getClickCount())">Clique aqui</button>
+					    
 					</header>
 
 				<!-- Footer -->
@@ -47,5 +58,9 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
+		
+
+<!-- Adicione este script no final do seu arquivo HTML, antes do fechamento da tag body -->
+	
 	</body>
 </html>
