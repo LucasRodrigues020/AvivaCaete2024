@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/styles/style.css">
+
+    <!-- linkando os arquivos Owl Carousel 2 css -->
+    <link rel="stylesheet" href="/src/styles/carousel-owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/src/styles/carousel-owl/owl.theme.default.min.css">
+
+    <script src="https://kit.fontawesome.com/b357c29d3a.js" crossorigin="anonymous"></script>
+    
+    <title>Netflix</title>
+</head>
+<body>
+    <!-- dados referente ao menu da página -->
+    <header>
+        <div class="container">            
+            <img src="/src/assets/img/logo_netflix.png" alt="Logo Netflix" class="logo">            
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- dados referente ao filme principal mostrado na página -->
+    <main>
+        <div class="main-movie">
+            <div class="container">
+                <h3 class="title-movie">HOUSE OF CARDS</h3>
+                <p class="description">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+                <div class="buttons">
+                    <button role="button" class="button">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="button">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>        
+    </main>
+
+    <div class="iframe-container">
+        <!-- A div abaixo será usada para inserir o iframe -->
+        <div id="iframeHolder"></div>
+          <button role="button" id="closeIframeBtn">
+            <i class="fas fa-times"></i>
+            Ocultar Vídeo 
+          </button>
+		</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="50">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="360" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    Prison Break - Temp 3 e 4
+  </text>
+
+</svg>
+
+    <div class="carousel-movie">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> 
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T3 E11
+  </text>
+</svg> 
+			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT03EP11" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T3 E12
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT03EP12" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T3 E13
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT03EP13" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E1-2
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP01-02" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E3
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP03" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E4
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP04" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E5
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP05" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E6
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP06" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E7
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP07" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E8
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP08" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E9
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP09" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E10
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP10" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E11
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP11" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E12
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP12" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E13
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP13" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E14
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP14" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E15
+  </text>
+</svg> 			
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP15" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E16
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP16" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E17
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP17" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E18
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP18" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E19
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP19" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E20
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP20" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E21
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP21" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="150" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    T4 E22
+  </text>
+</svg> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server1httphlb.php?vid=PRBKT04EP22" src="/src/assets/img/mini1.jpg" alt="" srcset="">
+            </div>
+			
+            <!-- Adicione mais imagens com códigos iframe diferentes conforme necessário -->
+        </div>        
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="360" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    Tv Ao vivo
+  </text>
+</svg> 
+    <div class="carousel-movie2">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=gloobinho" src="/src/assets/img/minigloobinho.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=animalplanet" src="/src/assets/img/miniplanet.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=sportv1" src="/src/assets/img/minisportv.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=espn" src="/src/assets/img/miniespn.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=history" src="/src/assets/img/minihistory.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=sbt" src="/src/assets/img/minisbt.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/ch.php?canal=record" src="/src/assets/img/minirecord.jpg" alt="" srcset="">
+            </div>
+			
+            <!-- Adicione mais imagens com códigos iframe diferentes conforme necessário -->
+        </div>        
+    </div>
+	
+	
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="55">
+  <!-- Defina o degradê -->
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FF6F61; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFDD61; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Botão 1 com animação de entrada -->
+  <rect x="-300" y="10" width="360" height="40" rx="5" ry="5" fill="url(#gradiente)">
+    <animate attributeName="x" values="-300;15" dur="1s" keyTimes="0;1" fill="freeze" />
+  </rect>
+  <text x="15" y="30" alignment-baseline="middle" text-anchor="start" fill="#fff" font-size="18" font-family="Arial, sans-serif" font-weight="bold">
+    <animate attributeName="x" values="30;30" dur="1s" keyTimes="0;1" fill="freeze" />
+    Chaves
+  </text>
+</svg> 
+    <div class="carousel-movie2">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> 
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP01" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP02" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP03" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP04" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP05" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP06" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP07" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP08" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP09" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP10" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP11" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP12" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP13" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP14" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP15" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP16" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP17" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP18" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP19" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP20" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP21" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP22" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP23" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP24" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP25" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP26" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP27" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP28" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP29" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP30" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP31" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP32" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP33" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP34" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP35" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" data-iframe-src="https://sinalpublico.com/player3/server12hlb.php?vid=CHVST03EP36" src="/src/assets/img/minichaves.jpg" alt="" srcset="">
+            </div>
+            <!-- Adicione mais imagens com códigos iframe diferentes conforme necessário -->
+        </div>        
+    </div>
+
+    <!-- linkando os arquivos Owl Carousel 2 js -->
+    <script src="/src/scripts/carousel-owl/jquery.min.js"></script>
+    <script src="/src/scripts/carousel-owl/owl.carousel.min.js"></script>
+    <script src="/src/scripts/carousel-owl/setup.js"></script>
+
+<!-- ... Seu código HTML existente ... -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtém todas as imagens com a classe 'box-movie'
+    const images = document.querySelectorAll('.box-movie');
+    const closeIframeBtn = document.getElementById('closeIframeBtn');
+    const iframeContainer = document.querySelector('.iframe-container');
+    const iframeHolder = document.getElementById('iframeHolder');        // Adiciona um ouvinte de evento de clique a cada imagem
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            // Obtém o código do iframe associado à imagem clicada
+            const iframeCode = getIframeCode(image);
+
+            // Insere o código do iframe na div 'iframeHolder'
+            iframeHolder.innerHTML = iframeCode;
+
+            // Exibe o contêiner do iframe
+            iframeContainer.style.display = 'block';
+        });
+    });
+
+    // Adiciona um ouvinte de evento de clique para fechar o iframe
+    closeIframeBtn.addEventListener('click', function() {
+        iframeContainer.style.display = 'none';
+        iframeHolder.innerHTML = ''; // Limpa o conteúdo do iframe
+    });
+    
+    // Função auxiliar para obter o código do iframe associado à imagem
+    function getIframeCode(image) {
+        // Obtém o valor do atributo 'data-iframe-src' da imagem clicada
+        const iframeSrc = image.getAttribute('data-iframe-src');
+
+        // Retorna o código do iframe com o src especificado
+        return `<iframe name="Player" src="${iframeSrc}" frameborder="0" height="400" scrolling="no" width="640" allow="encrypted-media" allowFullScreen></iframe>`;
+    }
+});
+</script>
+
+
+<!-- ... Seu código HTML existente ... -->
+
+    <!-- ... Seu código HTML existente ... -->
+
+    <footer class="baseboard">
+        <p>Este Site foi desenvolvido por Lucas Rodrigues</p>        
+    </footer>
+</body>
+</html>
